@@ -1,6 +1,6 @@
 terraform {
   required_version = ">= 1.0.11"
-  backend "task-7-terraform-state" {
+  backend "gcs" {
     bucket = "task-7-terraform-state"
     prefix = "dev"
   }
