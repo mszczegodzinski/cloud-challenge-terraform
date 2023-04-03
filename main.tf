@@ -22,3 +22,10 @@ resource "google_compute_instance" "dareit-vm-ci" {
     }
   }
 }
+
+resource "google_storage_bucket" "task-7-new-bucket" {
+  name          = "task-7-new-bucket"
+  location      = "US"
+  storage_class = "STANDARD"
+  force_destroy = true
+}
